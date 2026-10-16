@@ -102,7 +102,7 @@ pip install -e .
 
 ### Basic Usage
 
-Unlock all PDFs in the default `PDFs` folder:
+Unlock all PDFs in the current directory:
 ```bash
 upppdf
 ```
@@ -124,8 +124,10 @@ upppdf -i "/path/to/pdfs" -o "/path/to/output"
 | Option | Short | Description | Default |
 |--------|-------|-------------|---------|
 | `--file` | `-f` | Specific PDF file to unlock | All PDFs |
-| `--input-dir` | `-i` | Input directory containing PDFs | `PDFs` |
-| `--output-dir` | `-o` | Output directory for unlocked PDFs | `Unlocked_PDFs` |
+| `--input-dir` | `-i` | Input directory containing PDFs | Current directory |
+| `--output-dir` | `-o` | Output directory for unlocked PDFs | Current directory |
+| `--output-name` | | Custom name for the output file | `unlocked_` prefix |
+| `--show-passwords` | | Show all remembered passwords | - |
 | `--help` | `-h` | Show help message | - |
 
 ## How It Works
